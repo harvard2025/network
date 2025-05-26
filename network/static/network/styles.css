@@ -1,0 +1,377 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    padding: 20px;
+    border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-logo {
+    margin-bottom: 20px;
+}
+
+.sidebar-logo i {
+    font-size: 30px;
+    color: #1DA1F2;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-nav li {
+    margin: 15px 0;
+}
+
+.sidebar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #1DA1F2;
+    color: #000;
+}
+
+.sidebar-nav li a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Fix Container Styles */
+.fix {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.All_Post {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.new-post {
+    margin-bottom: 20px;
+}
+
+.New_Post-form {
+    width: 100%;
+}
+
+.New_Post {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    resize: none;
+}
+
+.btn-primary {
+    background-color: #1DA1F2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1991db;
+}
+
+/* Posts Styles */
+.all-posts {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.username a {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+.content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.date {
+    color: #888;
+    font-size: 14px;
+}
+
+.post-actions {
+    margin-top: 10px;
+}
+
+.fa-thumbs-up, .fa-thumbs-down {
+    color: #888;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.fa-thumbs-up:hover, .fa-thumbs-down:hover {
+    color: #1DA1F2;
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+}
+
+.modal-footer {
+    border-top: 1px solid #333;
+}
+
+.btn-secondary {
+    background-color: #333;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    color: #1DA1F2;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.page-link:hover {
+    text-decoration: underline;
+}
+
+/* Profile Page Styles */
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-username {
+    color: #1DA1F2;
+    font-size: 24px;
+}
+
+.profile-bio {
+    color: #888;
+    font-size: 16px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.profile-stats div {
+    text-align: center;
+}
+
+.profile-stats span {
+    font-size: 18px;
+    color: #1DA1F2;
+}
+
+.profile-stats p {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Following Page Styles */
+.following-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.following-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.following-list {
+    list-style: none;
+    padding: 0;
+}
+
+.following-list li {
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.following-list li a {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+/* Login and Register Page Styles */
+.auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.auth-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.auth-form button {
+    background-color: #1DA1F2;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: #1991db;
+}
+
+.auth-link {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #333;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .fix, .all-posts, .profile-container, .following-container, .auth-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .New_Post {
+        height: 80px;
+    }
+
+    .post {
+        padding: 10px;
+    }
+
+    .profile-stats {
+        flex-direction: column;
+    }
+
+    .profile-stats div {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar-nav li a {
+        font-size: 14px;
+    }
+
+    .All_Post, .profile-username, .following-title, .auth-title {
+        font-size: 20px;
+    }
+
+    .content, .profile-bio, .profile-stats p, .auth-form input {
+        font-size: 14px;
+    }
+
+    .btn-primary, .btn-secondary, .auth-form button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
