@@ -27,10 +27,14 @@
             <a class="sidebar-logo" href="{% url 'index' %}">
                 <img src="{% static 'Prro Coders.jpg' %}" alt="PrroCoders" width="100px" style="border-radius: 25px;"> <!-- أيقونة X -->
             </a>
-            <a class="nav-link" href="{% url 'profile' user_id=request.user.id %}">
+            {% if user.is_authenticated %}
+                <a class="nav-link" href="{% url 'profile' user_id=request.user.id %}">
                 <i class="fas fa-user"></i> <!-- أيقونة الملف الشخصي -->
                 <span>{{user}}</span>
             </a>
+            {% endif %}
+
+
             <br>
             <ul class="sidebar-nav">
                 <li class="nav-item">
